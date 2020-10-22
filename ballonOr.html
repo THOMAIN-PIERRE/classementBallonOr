@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Ballon d'Or</title>
+</head>
+<body>
+    
+        <h1 id="intitule"><u>BALLON D'OR 2019</u></h1>
+    
+   
+    <script>
+
+let maRequete = new XMLHttpRequest();
+maRequete.open("GET", 'joueurs.json');
+maRequete.responseType = "json";
+maRequete.send();
+maRequete.onload = function(){
+    console.log("Sans stringify", maRequete.response);
+    let tab = maRequete.response;
+    console.log(tab);
+    for(let e of tab){
+        let f = new Joueur(e.nom, e.img, e.pays, e.classement);
+        f.afficher();
+        console.log(f);
+    }
+
+}
+
+class Joueur{
+    constructor(n, i, p, c){
+        this.nom = n;
+        this.img = i;
+        this.pays = p;
+        this.classement = c;
+
+    }
+    afficher(){
+        let maDiv = document.createElement("div");
+        let nom = document.createElement("h1");
+        let img = document.createElement("img");
+        let para1 = document.createElement("h2");
+        let para2 = document.createElement("p");
+        let para3 = document.createElement("hr");
+    
+    nom.textContent = this.nom;
+    img.src = this.img;
+    para1.textContent = this.pays;
+    // para2.textContent = `Classement : ${this.classement}`;
+    para2.textContent = this.classement;
+
+    maDiv.appendChild(para2);
+    maDiv.appendChild(nom);
+    maDiv.appendChild(img);
+    maDiv.appendChild(para1);
+    maDiv.appendChild(para3);
+    document.body.appendChild(maDiv);
+
+}
+}
+
+    </script>
+</body>
+</html>

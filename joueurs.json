@@ -1,0 +1,45 @@
+[
+    {
+        "classement":1,
+        "nom":"MESSI Lionel",
+        "img": "./assets/img/MESSI.png",
+        "pays":"ARGENTINA"
+    },
+    {
+        "nom":"VAN DIJK Virgil",
+        "img": "./assets/img/VANDIJK.png",
+        "pays":"NETHERLANDS",
+        "classement":2
+    },
+    {
+        "nom":"RONALDO Cristiano",
+        "img":"./assets/img/RONALDO.png",
+        "pays":"PORTUGAL",
+        "classement":3
+    },
+    {
+        "nom":"MANE Sadio",
+        "img":"./assets/img/MANE.jpg",
+        "pays":"SENEGAL",
+        "classement":4
+    },
+    {
+        "nom":"SALAH Mohamed",
+        "img": "./assets/img/SALAH.png",
+        "pays":"EGYPT",
+        "classement":5
+    },
+    {
+        "nom":"MBAPPE Kylian",
+        "img": "./assets/img/MBAPPE.png",
+        "pays":"FRANCE",
+        "classement":6
+    },
+    {
+        "nom":"BECKER Alisson",
+        "img": "./assets/img/BECKER.png",
+        "pays":"BRASIL",
+        "classement":7
+    }
+    
+]

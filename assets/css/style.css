@@ -1,0 +1,146 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: url(https://arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/RFCR65SUXFBXVP43DU4G547BVQ.png)
+        no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: "Arial", sans-serif;
+}
+
+#intitule {
+    text-align: center;
+    font-size: 4rem;
+    color: yellow;
+    position: fixed;
+    width: 100%;
+    top: 0vh;
+}
+h1 {
+    font-size: 3.5rem;
+    color: yellow;
+    font-weight: bold;
+}
+img {
+    width: 15vw;
+    height: 30vh;
+    border: 4px solid yellow;
+}
+h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+p {
+    width: 80px;
+    height: 80px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: yellow;
+    border: 10px solid yellow;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 18vh;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr {
+    width: 40vw;
+    height: 5px;
+    background-color: yellow;
+}
+/*MEDIA QUERIES---------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 300px) and (max-width: 766px) {
+    #intitule {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 50%;
+        height: auto;
+    }
+    h2 {
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+    }
+    p {
+        margin-top: 25vh;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    hr {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1278px) {
+    #intitule {
+        font-size: 4rem;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    img {
+        width: 50%;
+        height: auto;
+    }
+    h2 {
+        font-size: 2.5rem;
+        
+    }
+    p {
+        margin-top: 20vh;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    hr {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1279px) {
+    #intitule {
+        font-size: 4rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    img {
+        width: 21%;
+        height: auto;
+    }
+    h2 {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+    }
+    p {
+        margin-top: 18vh;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    hr {
+        width: 80%;
+    }
+}
